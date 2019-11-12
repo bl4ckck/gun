@@ -1,0 +1,127 @@
+    /*
+        Deklarasi variable warna (CSS3)
+    */
+    :root {
+        --bg-black: #272727;
+        --bg-black1: #5e6373;
+        --bg-green: #00af82;
+        --bg-green1: #43a48c;
+        --bg-grey: #f7f9fa;
+    }
+    
+    /* 
+        Set jenis font dan bg color pada body
+    */
+    body {
+        font-family: 'B612', sans-serif;
+        background-color: var(--bg-black);
+    }
+
+    /*
+        Set bg color pada navbar
+    */
+    .navbar-gun {
+        background-color: var(--bg-green);
+    }
+
+
+    /*
+        Background Pattern
+        ====================
+    */
+    .bg-vector1 {
+        background-image: url("../../assets/images/patterns/bg-vector1.svg");
+        background-size: cover;
+        background-position: 1em;
+    }
+    .bg-vector2 {
+        background-image: url("../../assets/images/bg-pattern1.png");
+        background-size: cover;
+        background-position: top;
+    }
+    .bg-vector3 {
+        background-color: #77aa77;
+        background-image: url("../../assets/images/patterns/bg-vector3.svg");
+        background-size: cover;
+        background-position: right;
+    }
+    .bg-vector4 {
+        background-color: #98d8c9;
+        background-image: url("../../assets/images/patterns/bg-vector4.svg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .bg-vector5 {
+        background-image: url("../../assets/images/patterns/bg-vector5.svg");
+    }
+
+
+    /* 
+        Mengatur iframe agar max widthnya 100%, sehingga dapat responsive 
+    */
+    iframe,
+    object,
+    embed {
+        max-width: 100%;
+    }
+
+
+    /*
+        CAROUSEL
+        ===============
+    */
+
+    /*
+        Modifikasi container carousel
+    */
+    .carousel-container {
+        background-position-y: 15em;
+        margin-bottom: 0;
+    }
+
+    /*
+        Mengubah bg color carousel item
+    */
+    .carousel-item {
+        background-color: var(--bg-grey);
+    }
+
+    /*
+        Memaksimalkan width image carousel menjadi 100%
+    */
+    .carousel-item .img-fluid {
+        width: 100%;
+    }
+
+    /* 
+        block carousel item
+    */
+    .carousel-item a {
+       display: block;
+       width: 100%;
+    }
+
+    /*
+        Modifikasi height inner carousel dan bordernya
+    */
+    .carousel-inner {
+        border-radius: 0 0 50% 0;
+        height:600px;
+    }
+
+    /*
+        Styling carousel title
+        -----------------------
+    */
+    .carousel-title {
+        display:inline-block;
+        background-color:white;
+        padding:5px;
+        font-weight: bold;
+    }
+    .top-title {
+        color: var(--bg-green1);
+    }
+    .bottom-title {
+        color: var(--bg-black1);
+    }
