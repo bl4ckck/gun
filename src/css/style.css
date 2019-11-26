@@ -14,7 +14,8 @@
     */
     body {
         font-family: 'B612', sans-serif;
-        background-color: var(--bg-black);
+        background-color: white;
+        padding-bottom:0;
     }
 
     /*
@@ -34,11 +35,6 @@
         background-size: cover;
         background-position: 1em;
     }
-    .bg-vector2 {
-        background-image: url("../../assets/images/bg-pattern1.png");
-        background-size: cover;
-        background-position: top;
-    }
     .bg-vector3 {
         background-color: #77aa77;
         background-image: url("../../assets/images/patterns/bg-vector3.svg");
@@ -54,6 +50,18 @@
     .bg-vector5 {
         background-image: url("../../assets/images/patterns/bg-vector5.svg");
     }
+    .bg-pattern1 {
+        background-image: url("../../assets/images/bg1.jpg");
+        background-size: contain;
+    }
+    .bg-pattern2 {
+        background-size: cover;
+        background-image: url("../../assets/images/bg2.jpg");
+    }
+    .bg-pattern3 {
+        background-size: contain;
+        background-image: url("../../assets/images/bg3.jpg");
+    }
 
 
     /* 
@@ -65,63 +73,89 @@
         max-width: 100%;
     }
 
-
-    /*
-        CAROUSEL
-        ===============
-    */
-
-    /*
-        Modifikasi container carousel
-    */
-    .carousel-container {
-        background-position-y: 15em;
-        margin-bottom: 0;
+    .banner {
+       border-bottom-left-radius: 50% 20%;
+       border-bottom-right-radius: 50% 20%;
     }
 
-    /*
-        Mengubah bg color carousel item
-    */
-    .carousel-item {
-        background-color: var(--bg-grey);
+    .no-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
-
-    /*
-        Memaksimalkan width image carousel menjadi 100%
-    */
-    .carousel-item .img-fluid {
-        width: 100%;
+    .no-padding {
+        padding-left: 0;
+        padding-right: 0;
     }
-
-    /* 
-        block carousel item
-    */
-    .carousel-item a {
-       display: block;
-       width: 100%;
-    }
-
+    
     /*
-        Modifikasi height inner carousel dan bordernya
-    */
-    .carousel-inner {
-        border-radius: 0 0 50% 0;
-        height:600px;
-    }
-
-    /*
-        Styling carousel title
+        Email Input Footer
         -----------------------
     */
-    .carousel-title {
-        display:inline-block;
-        background-color:white;
-        padding:5px;
-        font-weight: bold;
-    }
-    .top-title {
-        color: var(--bg-green1);
-    }
-    .bottom-title {
-        color: var(--bg-black1);
-    }
+    /*
+        Wrapper dari formnya agar dapat diberi style
+    */
+     .formemail {
+         height: 50px;
+         background-color: white;
+         border-radius: 30px;
+         padding: 10px;
+         margin: 0 5%;
+     }
+     /*
+        Menghilangkan style default dari form input
+    */
+     .email_input {
+         color: white;
+         border: 0;
+         outline: 0;
+         background: none;
+         width: 0;
+         caret-color: transparent;
+         line-height: 30px;
+         transition: width 0.4s linear;
+     }
+     .email_input {
+         padding: 0 10px;
+         width: 450px;
+         caret-color: red;
+         transition: width 0.4s linear;
+     }
+
+    /*
+        Card Volunteers
+        -----------------------
+    */
+     /*
+        Mengganti bg color dan mengatur jarak padding
+    */
+     .card-vol {
+         color: white;
+         padding: 10px 0 10px 10px;
+         border: none;
+         background-color:#00af82;
+     }
+      /*
+        Mengatur font size dari biodata
+    */
+     .desc-vol {
+         font-size: 0.9em;
+     }
+
+     /*
+        Buttons
+        -----------------------
+    */
+     .btn-cust1 {
+         color: white;
+         background-image: linear-gradient(to right, #fda088, #fc9880, #fa8f77, #f98670, #f77d68);
+         box-shadow: none;
+         font-weight: 500;
+         border-radius: 50px 50px 50px 50px;
+         font-weight: bold;
+         margin: 0 50px;
+         font-size: 1em;
+     }
+
+     /*
+        ALVIN
+    */
